@@ -1,0 +1,585 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;900;1000&display=swap");
+body {
+    font-family: "Cairo", sans-serif;
+  
+color: #f5f5f5;
+background-color: #f5f5f5;
+overflow-x: hidden;
+}
+
+/*--------Utilyy classes------
+
+
+/*  ----------  header style start ------
+header {
+  background-color:rgb(139, 00, 00) ;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px  100px;
+  
+  
+}
+header .navbar a {
+  text-decoration: none;
+  color: #f5f5f5;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.4em;
+  padding-left: 30px;
+  
+}
+header .navbar a:hover {
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod ;
+
+}
+.logo img {
+  width: 50px;
+  height: 75px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  
+  
+}
+.logo img:hover{
+   
+box-shadow: 0 5px 25px rgb(195, 151, 39, 0.6);
+}
+
+/*--header end-----*/
+/*--------- main sectin start---------*/
+.navbar-brand{
+  width: 50px;
+
+}
+
+.navbar-brand img{
+  width: 100%;
+  margin-left: 100px;
+
+}
+
+header{padding: 0;
+  margin:0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: sticky !important;
+  z-index: 1000;
+  
+}
+.navbar .collapse{
+  margin-right: 100px;
+}
+
+
+
+
+    
+
+
+
+
+
+
+.nam {
+  color: goldenrod;
+  text-transform: capitalize;
+ 
+}
+
+.btn
+{
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+     text-decoration: none;
+       color: #f5f5f5;
+       font-weight: 300;
+       font-size: 1em;
+       margin-top: 50px;
+
+}
+
+.btn-primary {
+    color: goldenrod;
+    border: 2px solid goldenrod;
+   
+    background-color: #f5f5f5;
+  padding: 1em , 2em;
+  text-transform: capitalize;
+  
+  
+
+
+}
+.btn-primary:hover 
+{
+background-color:goldenrod;
+color: black;
+border: 2px solid black;
+transform: scale(1.1);
+transition: 0.7s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  padding : 50px 100px ;
+  
+
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../image/Al-Ahly-SC.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.main h1 {
+
+ 
+  color: #f5f5f5;
+  font-size: 1.9em;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  
+}
+.main p{
+   color: #f5f5f5;
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.social-icon a { 
+  color: white;
+  font-size: 1.7em;
+  padding-right:30px ;
+
+
+
+}
+.social-icon{
+  margin-top: 75px;
+  
+}
+
+.main::before
+{
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.4);
+}
+.main *{
+    z-index: 5;
+}
+/*--alhhly news--*/
+.news{
+  width: 100%;
+   min-height: 100vh;
+}
+.container div{
+ 
+  
+  background-color: #f5f5f5;
+  min-height: 400px;
+  margin-bottom:  30px;
+  color: #f5f5f5;
+  border-radius: 5px;
+   
+    box-shadow: 0 5px 25px rgba(249, 248, 245, 0.3);
+    transition: 0.7s ease;
+    
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: end; */
+
+    
+    
+    
+
+    
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-around; */
+  flex-direction: row;
+  align-items: self-start;
+justify-content: space-between;
+
+}
+.container  .news-card1{
+  height: 400px;
+  background-image: url(../image/FBjpg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   padding: 10px;
+}
+.container  .news-card2{
+  height: 400px;
+  background-image: url(../image/FB_IMG_169.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   padding: 10px;
+}
+.container  .news-card3{
+  height: 400px;
+  background-image: url(../image/FB_IM.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   padding: 10px;
+}
+.container  .news-card4{
+  height: 400px;
+  background-image: url(../image/FB_IMG_16.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   padding: 10px;
+}
+.container  .news-card5 {
+  height: 400px;
+  background-image: url(../image/FB_IMG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.nus
+{
+  margin: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  text-transform: capitalize;
+}
+
+.container  div:hover{
+    transform: scale(1.1,1.1);
+}
+
+.container div p{
+    margin-top: 200px;
+    
+    margin-left: 10px;
+font-weight: 800;
+font-size: 20px;
+
+
+}
+
+
+
+/*---------sectin-awardes--------*/
+.container2 li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  text-align: center;
+  
+  border-bottom: 2px solid goldenrod;
+}
+.awards__list p{
+  font-weight: 800;
+  font-size: 18px;
+
+}
+
+
+
+ .container2 {
+width: 100%;
+   color: beige;
+  background-image:url(../image/awards.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 75vh;
+  padding:0 5px;
+
+ 
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.awards__title {
+    font-size: 50px;
+    
+}
+.png{
+  width: 50px;
+  height: 50px;
+    background-color: inherit;
+}
+.png:hover{
+  box-shadow: inset;
+   box-shadow: 0 5px 25px rgba(249, 248, 245, 0.3);
+    transition: 1s ease-in-out;
+    width: 100px;
+    height: 100px;
+  
+
+    
+}
+.awards__list li:hover{
+
+  color: goldenrod;
+  
+}
+.blok-el{
+  display: block;
+  font-size: 120px;
+  color: goldenrod;
+}
+
+
+
+
+
+.responser{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px ;
+    margin-right: 10px;
+    background-color: inherit;
+
+
+}
+
+.responser ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+    justify-content: space-evenly;   
+    
+    
+
+}
+.responser img{
+background-color: #fdfcfc;
+    width: 120px;
+    height: 70px;
+}
+.responser ul li{
+  
+  margin-left: 10px;
+  max-height: 90px;
+  max-width: 160px;
+   
+ 
+    
+
+}
+
+
+/* ggm */
+.contenqt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #f9380c;
+}
+
+.more-details:hover {
+    color: #fe0000;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+.project-info span {
+  color: #000016;
+}
+.title{
+  text-transform: capitalize;
+}
+/*foter--*/
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color:goldenrod;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: goldenrod;
+    
+}
+.footer p{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width:1023px){
+   
+    .navbar a{
+        padding-left: 10px;
+        
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 15px;
+    }
+
+   
+    
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 11px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
